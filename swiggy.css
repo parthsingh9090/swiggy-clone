@@ -1,0 +1,74 @@
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--orange:#ff6d24;--deep:#e85b13;--ink:#202127;--muted:#686b78;--line:#e9e9ed;--cream:#fff8f2}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+.navbar{height:82px;max-width:1240px;margin:auto;padding:0 28px;display:flex;align-items:center;gap:54px}
+.brand{display:flex;align-items:center;gap:9px;font-size:25px;font-weight:800;letter-spacing:-1.2px;color:#25252b}
+.brand-mark{width:37px;height:37px;border-radius:12px 12px 12px 3px;background:var(--orange);color:white;display:grid;place-items:center;font-size:24px;font-weight:800;font-style:italic}
+.nav-links{display:flex;gap:35px;margin-left:auto;font-size:14px;font-weight:600;color:#34343a}
+.external{color:var(--orange);font-size:16px}
+.nav-actions{display:flex;align-items:center;gap:15px}
+.app-link{padding:12px 18px;border:1px solid #d8d8dd;border-radius:12px;font-weight:700;font-size:14px}
+.app-link span{color:var(--orange);margin-left:8px}
+.signin{background:#202127;color:white;border-radius:12px;padding:13px 24px;font-size:14px;font-weight:700}
+.hero{min-height:435px;background:#ff762e;position:relative;display:flex;align-items:center;justify-content:center;padding:48px 20px 54px;overflow:hidden;color:white}
+.hero-content{width:min(760px,100%);text-align:center;position:relative;z-index:2}
+.eyebrow,.kicker{font-size:10px;font-weight:800;letter-spacing:2px;margin-bottom:13px}
+.hero h1{font-size:39px;line-height:1.2;letter-spacing:-1.5px;font-weight:800}
+.hero h1 span{color:#fff1d9}
+.search-row{display:flex;gap:12px;margin:30px auto 0;max-width:690px}
+.search-box{height:58px;background:white;border-radius:13px;display:flex;align-items:center;padding:0 17px;color:#777;box-shadow:0 8px 24px #9d3e1d24}
+.search-box input{border:0;outline:0;width:100%;font:500 13px Inter, sans-serif;color:#27272d;min-width:0}
+.search-box input::placeholder{color:#85858d}
+.location-box{flex:0 0 42%}.food-box{flex:1}
+.pin{font-size:22px;color:var(--orange);margin-right:11px}.chevron{font-size:20px;color:#555}.search-icon{font-size:24px;color:#555;margin-left:8px}
+.hero-trust{font-size:12px;font-weight:600;margin-top:20px;color:#fff4eb}.hero-trust span{color:#ffe8a9;margin-right:5px}
+.hero-art{position:absolute;top:50%;transform:translateY(-50%);width:245px;height:270px;z-index:1}
+.hero-art img{width:100%;height:100%;object-fit:cover;border-radius:46% 46% 42% 42%;border:8px solid #ff9b5f;box-shadow:0 15px 35px #a83b1b40}
+.hero-left{left:-42px;transform:translateY(-50%) rotate(-9deg)}.hero-right{right:-40px;transform:translateY(-50%) rotate(9deg)}
+.section-wrap{max-width:1180px;margin:0 auto;padding-left:28px;padding-right:28px}
+.services{padding-top:62px;padding-bottom:52px}
+.section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:25px}
+.kicker{color:var(--orange);margin-bottom:8px}
+h2{font-size:27px;line-height:1.2;letter-spacing:-.8px;font-weight:800}
+.heading-note{font-size:12px;color:var(--muted);padding-bottom:4px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.service-card{min-height:205px;border-radius:18px;padding:22px 20px;display:flex;align-items:center;justify-content:space-between;position:relative;overflow:hidden;transition:transform .2s}
+.service-card:hover{transform:translateY(-4px)}
+.food-card{background:#fff0e6}.instamart-card{background:#f0f8e9}.dineout-card{background:#fff1f0}
+.service-copy{position:relative;z-index:1;max-width:62%}
+.service-tag{font-size:9px;letter-spacing:1px;font-weight:800;color:#8a6b5c}
+.service-card h3{font-size:25px;line-height:1.05;margin:10px 0 8px;letter-spacing:-.7px}
+.service-card p{font-size:11px;color:#666;line-height:1.5}
+.service-card img{width:43%;height:145px;object-fit:cover;border-radius:13px;transform:rotate(3deg)}
+.round-arrow{display:grid;place-items:center;background:white;color:var(--orange);width:29px;height:29px;border-radius:50%;font-weight:700;margin-top:12px}
+.category-section{padding-top:26px;padding-bottom:53px;border-top:1px solid #f0f0f2}
+.slider-arrows{display:flex;gap:9px}.slider-arrows button{border:0;background:#f1f1f3;border-radius:50%;width:32px;height:32px;font-size:23px;color:#393940;cursor:pointer}
+.category-grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:20px 14px}
+.category{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;font-size:12px;font-weight:650;line-height:1.35;color:#303039}
+.category img{width:100%;max-width:112px;aspect-ratio:1/1;object-fit:cover;border-radius:50%;background:#f5f5f5;transition:transform .2s}
+.category:hover img{transform:scale(1.05)}
+.grocery-section{border-top:1px solid #f0f0f2}
+.grocery-categories .category img{border-radius:16px;max-width:118px;aspect-ratio:1/1.08}
+.app-banner{background:#fff2e8;border-radius:22px;margin-top:5px;margin-bottom:65px;padding-top:34px;padding-bottom:34px;display:flex;align-items:center;justify-content:space-between;position:relative;overflow:hidden}
+.app-banner h2{font-size:28px}.app-banner>div:first-child>p:last-child{font-size:12px;color:#777;margin-top:9px}
+.app-badges{display:flex;gap:10px;position:relative;z-index:1}.app-badges a{background:#222;color:white;border-radius:9px;padding:13px 17px;font-size:12px;font-weight:700}
+.phone-art{width:95px;height:140px;border:7px solid #25252b;border-bottom-width:12px;border-radius:18px;background:#ff782f;color:white;display:grid;place-items:center;font-size:11px;font-weight:800;transform:rotate(8deg);box-shadow:0 8px 20px #5d321d25}
+.phone-art span{font-size:35px}
+.footer{background:#090a0d;color:white;padding:48px max(28px,calc((100% - 1124px)/2)) 20px}
+.footer-main{display:grid;grid-template-columns:1.3fr repeat(5,1fr);gap:32px;padding-bottom:38px}
+.light-brand{color:white;font-size:23px}.light-brand .brand-mark{background:var(--orange)}
+.footer-brand p{font-size:12px;color:#b9bbc2;margin-top:22px}.footer-brand small{display:block;color:#777b84;margin-top:7px;font-size:10px}
+.footer-column{display:flex;flex-direction:column;gap:13px}.footer-column h4{font-size:13px;margin-bottom:5px}.footer-column a{font-size:11px;color:#b7bac3}.footer-column a:hover{color:white}
+.subhead{margin-top:12px}.socials{display:flex;gap:8px}.socials a{width:26px;height:26px;border:1px solid #555;border-radius:50%;display:grid;place-items:center;color:white;font-weight:700}
+.store-link{border:1px solid #4a4b50;padding:9px 10px;border-radius:8px;max-width:125px}
+.footer-bottom{border-top:1px solid #282a30;padding-top:17px;display:flex;justify-content:space-between;color:#858892;font-size:10px}
+@media(max-width:900px){.navbar{gap:22px}.nav-links{gap:18px}.hero-art{width:175px;height:205px}.hero-left{left:-80px}.hero-right{right:-80px}.category-grid{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:24px}.footer-main{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:650px){.navbar{height:68px;padding:0 17px;gap:12px}.brand{font-size:22px}.brand-mark{width:32px;height:32px;font-size:21px}.nav-links{display:none}.nav-actions{margin-left:auto;gap:8px}.app-link{font-size:11px;padding:10px 11px}.signin{font-size:11px;padding:11px 15px}
+.hero{min-height:475px;padding:50px 18px 42px;align-items:flex-start}.hero-content{padding-top:10px}.hero h1{font-size:30px;line-height:1.22}.search-row{flex-direction:column;margin-top:24px;gap:10px}.search-box{height:53px}.location-box{flex:auto}.hero-art{width:110px;height:115px;top:auto;bottom:-32px;transform:none!important}.hero-left{left:-22px}.hero-right{right:-20px}.hero-art img{border-width:5px}.hero-trust{font-size:10px}
+.section-wrap{padding-left:18px;padding-right:18px}.services{padding-top:42px;padding-bottom:36px}.section-heading{align-items:flex-start;gap:12px}.section-heading h2{font-size:22px}.heading-note{display:none}.service-grid{grid-template-columns:1fr;gap:12px}.service-card{min-height:160px;padding:18px}.service-card h3{font-size:23px}.service-card img{height:125px;width:40%}.category-section{padding-top:28px;padding-bottom:38px}.category-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:22px 10px}.category{font-size:11px}.category img{max-width:88px}.grocery-categories .category img{max-width:88px}.slider-arrows{display:none}
+.app-banner{margin:0 18px 42px;padding:25px 20px;display:block}.app-banner h2{font-size:22px}.app-badges{margin-top:18px;flex-wrap:wrap}.phone-art{position:absolute;right:19px;bottom:23px;width:65px;height:100px;font-size:9px}.phone-art span{font-size:25px}
+.footer{padding:36px 20px 18px}.footer-main{grid-template-columns:repeat(2,1fr);gap:28px 18px}.footer-brand{grid-column:1/-1}.footer-brand p{margin-top:12px}.footer-bottom{gap:10px;line-height:1.5;flex-direction:column}
+}
+@media(min-width:651px) and (max-width:760px){.hero-art{opacity:.45}.hero-content{max-width:650px}.service-card{padding:15px}.service-card h3{font-size:21px}}
